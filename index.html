@@ -126,7 +126,7 @@ button:hover{
 
 <div class="bank">하나은행</div>
 
-<div class="account">01035977444307</div>
+<div class="account">010-3597-7444-307</div>
 
 <div class="name">박태영(청년어부)</div>
 
@@ -135,14 +135,14 @@ button:hover{
 </button>
 
 <div class="notice">
-복사 후 사용 중인 은행 앱에<br>
-붙여넣기 해주세요.
+복사 버튼을 누르신 후<br>
+사용 중인 은행 앱에 붙여넣기 해주세요.
 </div>
 
 </div>
 
 <div id="toast" class="toast">
-✅ 입금 정보가 복사되었습니다
+✅ 입금 정보가 복사 되었습니다
 </div>
 
 <script>
@@ -150,8 +150,7 @@ button:hover{
 function copyInfo(){
 
 const text=`하나은행
-01035977444307
-박태영(청년어부)`;
+01035977444307`;
 
 navigator.clipboard.writeText(text).then(()=>{
 
