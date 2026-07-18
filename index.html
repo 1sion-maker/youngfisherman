@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 아이폰 전화번호 자동 인식 방지 -->
+<meta name="format-detection" content="telephone=no">
+
 <title>청년어부 계좌이체</title>
 
 <style>
@@ -59,6 +63,13 @@ body{
     font-size:34px;
     font-weight:700;
     letter-spacing:1px;
+    color:#111;
+}
+
+.account a{
+    color:#111 !important;
+    text-decoration:none !important;
+    pointer-events:none;
 }
 
 .name{
@@ -126,7 +137,10 @@ button:hover{
 
 <div class="bank">하나은행</div>
 
-<div class="account">01035977444307</div>
+<!-- 보이지 않는 문자로 전화번호 인식 방지 -->
+<div class="account">
+010&#8203;-3597&#8203;-7444&#8203;-307
+</div>
 
 <div class="name">박태영(청년어부)</div>
 
@@ -142,7 +156,7 @@ button:hover{
 </div>
 
 <div id="toast" class="toast">
-✅ 입금 정보가 복사 되었습니다
+✅ 입금 정보가 복사되었습니다.
 </div>
 
 <script>
